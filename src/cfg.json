@@ -1,0 +1,8 @@
+{
+  "beerPath": "../json/stocks.json",
+  "beerSchemaPath": "../json/schemas/stocks_schema.json",
+  "ordersPath": "../json/orders.json",
+  "ordersSchemaPath": "../json/schemas/orders_schema.json",
+  "logPath": "../log.txt",
+  "logLevel": "DEBUG"
+}

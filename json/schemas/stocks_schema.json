@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "stocks": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "beer": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "enum": ["IPA", "APA"]
+                }
+              },
+              "required": [
+                "name"
+              ]
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "singularPrice": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "beer",
+            "quantity",
+            "singularPrice"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "stocks"
+  ]
+}

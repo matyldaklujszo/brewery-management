@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "beerPath": {
+      "type": "string"
+    },
+    "beerSchemaPath": {
+      "type": "string"
+    },
+    "ordersPath": {
+      "type": "string"
+    },
+    "ordersSchemaPath": {
+      "type": "string"
+    },
+    "logPath": {
+      "type": "string"
+    },
+    "logLevel": {
+      "enum": ["DEBUG", "INFO", "WARNING", "ERROR"]
+    }
+  },
+  "required": [
+    "beerPath",
+    "ordersPath",
+    "logPath"
+  ]
+}

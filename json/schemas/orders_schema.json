@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "orders": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "products": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "beer": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "enum": [
+                            "IPA",
+                            "APA"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "name"
+                      ]
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "beer",
+                    "quantity"
+                  ]
+                }
+              ]
+            },
+            "customer": {
+              "type": "string"
+            },
+            "orderDate": {
+              "type": "string"
+            },
+            "completionDate": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "products",
+            "customer",
+            "orderDate"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "orders"
+  ]
+}
